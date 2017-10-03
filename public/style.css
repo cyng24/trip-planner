@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetia Neue", Helvetica, Arial, sans-serif;
+    background-color: #C1B5AD;
+}
+
+header{
+    position: fixed;
+    width: 90%;
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateY(-7.5em);
+    z-index: 3;
+    transition: transform 0.2s linear;
+    border-radius: 0 0 50px 50px;
+    margin-left: 5%;
+    padding-bottom: 10px;
+}
+
+header:hover {
+    transform: translateY(0);
+}
+
+#logo{
+    display: inline-block;
+    margin: inherit;
+    padding: 20px;
+    vertical-align: inherit;
+}
+
+button{
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: inherit;
+    margin: inherit;
+}
+
+/* #pulldown{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font: serif;
+} */
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
