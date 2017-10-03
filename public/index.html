@@ -6,17 +6,35 @@
         <link rel="stylesheet" href="./style.css"></link>
     </head>
     <body>
-        <header>
-            <button>
+        <header class='start'>
+            <button id= 'add'>
                 Add Marker
             </button>
             <div id="logo">
                 <img alt = 'logo' src = 'map-logo.png' width='100'/>
             </div>
-            <button>
+            <button id='remove'>
                 Remove Marker
             </button>
         </header>
-       <div id="map"></div> 
+
+        <div id = 'centerImage'>
+          <img src = 'map-logo.png'>
+        </div>
+
+        <div id='markerOptions'>
+          <p>x</p>
+          <button id='activity' class='options'>
+            Activity
+          </button>
+          <button id='hotel' class='options'>
+            Hotels
+          </button>
+          <button id='restaurant' class='options'>
+            Restaurant
+          </button>
+        </div>
+
+       <div id="map"></div>
     </body>
 </html>

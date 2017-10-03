@@ -11,15 +11,19 @@ body {
 header{
     position: fixed;
     width: 90%;
-    background-color: lightgray;
+    background-color: gray;
     text-align: center;
     vertical-align: middle;
     transform: translateY(-7.5em);
     z-index: 3;
-    transition: transform 0.2s linear;
+    transition: transform 0.25s linear;
     border-radius: 0 0 50px 50px;
     margin-left: 5%;
     padding-bottom: 10px;
+}
+
+header.start{
+  transform: translateY(0);
 }
 
 header:hover {
@@ -45,15 +49,42 @@ button{
     margin: inherit;
 }
 
-/* #pulldown{
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    font: serif;
-} */
+button:hover{
+  background-color: white;
+  color: #4CAF50;
+  box-shadow: #d3d3d3;
+}
+
+#centerImage{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#centerImage.hide{
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1.5s ease-out, z-index 0s 2s;
+}
+
+#markerOptions{
+  padding: 40px;
+  background-color: white;
+  position: fixed;
+  z-index: 3;
+  transform: translateY(-20em);
+}
+
+#markerOptions.active{
+  transform: translateY(0);
+  transition: transform 1s ease-in;
+  top: 40%;
+  left: 42%;
+}
 
 #map {
     height: 100vh;
     width: 100vw;
 }
-
